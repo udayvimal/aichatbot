@@ -1,0 +1,11 @@
+streamlit
+langchain
+openai
+transformers==4.39.3
+huggingface_hub==0.23.1
+accelerate==0.29.3
+faiss-cpu==1.7.4
+sentence-transformers==2.7.0
+torch==2.2.2
+python-dotenv
+PyPDF2

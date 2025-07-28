@@ -2,6 +2,12 @@ services:
   - type: web
     name: aichatbot
     env: python
-    buildCommand: pip install -r requirements.txt
+    plan: free
+    buildCommand: |
+      echo "python-3.10.12" > runtime.txt
+      pip install --upgrade pip
+      pip install -r requirements.txt
     startCommand: streamlit run app.py
-    pythonVersion: 3.10.12
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.12

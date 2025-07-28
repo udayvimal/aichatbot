@@ -1,5 +1,5 @@
 --extra-index-url https://pypi.org/simple
-python-3.11.9
+
 streamlit
 langchain
 openai
